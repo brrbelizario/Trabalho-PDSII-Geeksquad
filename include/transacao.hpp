@@ -1,17 +1,21 @@
-#pragma once
-#include <string>
+#ifndef TRANSACAO_HPP
+#define TRANSACAO_HPP
+
 #include <iostream>
 #include <iomanip>
 #include <sstream>
+using namespace std;
 
 class Transacao {
 private:
     double valor;
-    std::string tipo;
+    string tipo;
 
 public:
-    Transacao(double valor, const std::string& tipo);
+    Transacao(double valor, const string& tipo);
 
     void exibirDetalhes() const;
-    std::string formatarParaLog() const;
+    string formatarParaLog() const;
 };
+
+#endif // TRANSACAO_HPP
