@@ -16,8 +16,6 @@ Depósito: Adição de valores à carteira do usuário.
 
 Retirada: Redução de valores da carteira do usuário.
 
-Transferência: Transferência de valores entre contas de usuários.
-
 Registro de Transações: Histórico detalhado das operações realizadas.
 
 
