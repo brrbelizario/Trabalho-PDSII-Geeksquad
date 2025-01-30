@@ -1,17 +1,20 @@
-#ifndef CARTEIRA_H
-#define CARTEIRA_H
+#ifndef CARTEIRA_HPP
+#define CARTEIRA_HPP
 
 #include <iostream>
+using namespace std;
 
 class Carteira {
 private:
     double saldo;
 
 public:
-    Carteira(); // Construtor
+    Carteira();
+
     double getSaldo() const;
     void adicionarSaldo(double valor);
     bool retirarSaldo(double valor);
 };
 
-#endif // CARTEIRA_H
+#endif // CARTEIRA_HPP
+

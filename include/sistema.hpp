@@ -1,41 +1,42 @@
-#pragma once
+#ifndef SISTEMA_HPP
+#define SISTEMA_HPP
 
-#include <unordered_map>
-#include <string>
 #include "Usuario.hpp"
-#include "Carteira.hpp"
-#include "Historico.hpp"
-#include "Logger.hpp"
 #include "Cadastro.hpp"
 #include "Login.hpp"
-#include "Transferencia.hpp"
-#include "Saldo.hpp"
+#include "Logger.hpp"
 #include "Deposito.hpp"
 #include "Retirada.hpp"
-#include "Notificacao.hpp"
-#include "Validador.hpp"
-#include "Relatorio.hpp"
+#include "Saldo.hpp"
+#include "Historico.hpp"
+#include "Transacao.hpp"
+#include <unordered_map>
+#include <fstream>
+#include <iostream>
+using namespace std;
 
 class Sistema {
 private:
-    std::unordered_map<std::string, Usuario> usuarios;
+    unordered_map<string, Usuario> usuarios;
     Usuario* usuarioAtual = nullptr;
-    std::string senhaAdmin = "00000";
+    string senhaAdmin = "00000";
 
-    std::string gerarChaveUsuario(const std::string& nome, const std::string& sobrenome);
+    string gerarChaveUsuario(const string& nome, const string& sobrenome);
 
 public:
     void carregarUsuarios();
     void salvarUsuarios();
-    void adicionarUsuario(const std::string& nome, const std::string& sobrenome, const std::string& senha, int idade, bool administrador = false);
-    bool logarUsuario(const std::string& nome, const std::string& sobrenome, const std::string& senha);
+    void adicionarUsuario(const string& nome, const string& sobrenome, const string& senha, int idade, bool administrador = false);
+    bool logarUsuario(const string& nome, const string& sobrenome, const string& senha);
     void logout();
     Usuario* getUsuarioAtual();
-    Usuario* buscarUsuario(const std::string& nome, const std::string& sobrenome);
+    Usuario* buscarUsuario(const string& nome, const string& sobrenome);
     void acessarLogAdministrador();
     void alterarSenhaAdmin();
-    std::string getSenhaAdmin() const;
+    string getSenhaAdmin() const;
     void exibirMenuInicial();
     void registrarConta();
     void fazerLogin();
 };
+
+#endif // SISTEMA_HPP

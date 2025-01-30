@@ -1,15 +1,19 @@
-#pragma once
+#ifndef CRIPTOMOEDA_HPP
+#define CRIPTOMOEDA_HPP
 
 #include <string>
+using namespace std;
 
 class Criptomoeda {
 private:
-    std::string nome;
+    string nome;
     double cotacao;
 
 public:
-    Criptomoeda(const std::string& nome, double cotacao);
+    Criptomoeda(string nome, double cotacao);
 
-    std::string getNome() const;
+    string getNome() const;
     double getCotacao() const;
 };
+
+#endif // CRIPTOMOEDA_HPP

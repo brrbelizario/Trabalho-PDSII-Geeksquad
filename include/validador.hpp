@@ -1,11 +1,15 @@
-#pragma once
+#ifndef VALIDADOR_HPP
+#define VALIDADOR_HPP
+
 #include <string>
 #include <unordered_map>
-
-class Usuario; 
+#include "Usuario.hpp"
+using namespace std;
 
 class Validador {
 public:
     static bool validarIdade(int idade);
-    static bool validarNomeResponsavel(const std::string& nome, const std::string& sobrenome, const std::unordered_map<std::string, Usuario>& usuarios);
+    static bool validarNomeResponsavel(const string& nome, const string& sobrenome, const unordered_map<string, Usuario>& usuarios);
 };
+
+#endif // VALIDADOR_HPP
