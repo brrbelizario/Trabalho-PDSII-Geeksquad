@@ -1,20 +1,41 @@
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-#include <string>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
+#include <iostream>      
+#include <fstream>       
+#include <string>       
+#include <vector>        
+#include <unordered_map> 
+#include <iomanip>       
+#include <sstream>       
+#include <cctype> 
 #include <ctime>
-#include <algorithm>
+#include <algorithm>      
+
+#include "Usuario.cpp"
+#include "Carteira.cpp"
+#include "Transacao.cpp"
+#include "Criptomoeda.cpp"
+#include "Historico.cpp"
+#include "Logger.cpp"
+#include "Cadastro.cpp"
+#include "Login.cpp"
+#include "Transferencia.cpp"
+#include "Saldo.cpp"
+#include "Deposito.cpp"
+#include "Retirada.cpp"
+#include "Notificacao.cpp"
+#include "Validador.cpp"
+#include "Relatorio.cpp"
+#include "Sistema.cpp"
+
 using namespace std;
 
-#include "..src/sistema.hpp"
-#include "..src/usuario.hpp"
-// Função principal
 int main() {
     Sistema sistema;
+
     sistema.carregarUsuarios();
+
     sistema.exibirMenuInicial();
+
+    sistema.salvarUsuarios();
+
     return 0;
 }
