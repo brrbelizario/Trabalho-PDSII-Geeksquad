@@ -9,22 +9,22 @@
 #include <ctime>
 #include <algorithm>      
 
-#include "Usuario.hpp"
-#include "Carteira.hpp"
-#include "Transacao.hpp"
-#include "Criptomoeda.hpp"
-#include "Historico.hpp"
-#include "Logger.hpp"
-#include "Cadastro.hpp"
-#include "Login.hpp"
-#include "Transferencia.hpp"
-#include "Saldo.hpp"
-#include "Deposito.hpp"
-#include "Retirada.hpp"
-#include "Notificacao.hpp"
-#include "Validador.hpp"
-#include "Relatorio.hpp"
-#include "Sistema.hpp"
+#include "Usuario.cpp"
+#include "Carteira.cpp"
+#include "Transacao.cpp"
+#include "Criptomoeda.cpp"
+#include "Historico.cpp"
+#include "Logger.cpp"
+#include "Cadastro.cpp"
+#include "Login.cpp"
+#include "Transferencia.cpp"
+#include "Saldo.cpp"
+#include "Deposito.cpp"
+#include "Retirada.cpp"
+#include "Notificacao.cpp"
+#include "Validador.cpp"
+#include "Relatorio.cpp"
+#include "Sistema.cpp"
 
 using namespace std;
 
