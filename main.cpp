@@ -25,6 +25,7 @@
 #include "Validador.cpp"
 #include "Relatorio.cpp"
 #include "Sistema.cpp"
+/*#include "ComprarCripto.cpp"*\
 
 using namespace std;
 
