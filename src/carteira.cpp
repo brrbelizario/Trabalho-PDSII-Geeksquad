@@ -1,4 +1,4 @@
-#include "..src/Carteira.hpp"
+#include "Carteira.hpp"
 
 Carteira::Carteira() : saldo(0.0) {}
 
@@ -8,18 +8,16 @@ double Carteira::getSaldo() const {
 
 void Carteira::adicionarSaldo(double valor) {
     if (valor < 0) {
-        std::cout << "Valor invalido" << std::endl;
+        cout << "valor invalido" << endl;
     } else {
         saldo += valor;
     }
 }
 
 bool Carteira::retirarSaldo(double valor) {
-    if (valor > saldo) {
-        return false;
-    }
+    if (valor > saldo) return false;
     if (valor < 0) {
-        std::cout << "Valor invalido" << std::endl;
+        cout << "valor invalido" << endl;
         return false;
     } else {
         saldo -= valor;

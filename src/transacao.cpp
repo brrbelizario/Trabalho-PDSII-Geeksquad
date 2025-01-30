@@ -1,13 +1,13 @@
 #include "Transacao.hpp"
 
-Transacao::Transacao(double valor, const std::string& tipo) : valor(valor), tipo(tipo) {}
+Transacao::Transacao(double valor, const string& tipo) : valor(valor), tipo(tipo) {}
 
 void Transacao::exibirDetalhes() const {
-    std::cout << "Transacao: " << tipo << ", Valor: " << std::fixed << std::setprecision(2) << valor << std::endl;
+    cout << "Transacao: " << tipo << ", Valor: " << fixed << setprecision(2) << valor << endl;
 }
 
-std::string Transacao::formatarParaLog() const {
-    std::stringstream ss;
-    ss << "Transacao: " << tipo << ", Valor: " << std::fixed << std::setprecision(2) << valor;
+string Transacao::formatarParaLog() const {
+    stringstream ss;
+    ss << "Transacao: " << tipo << ", Valor: " << fixed << setprecision(2) << valor;
     return ss.str();
 }

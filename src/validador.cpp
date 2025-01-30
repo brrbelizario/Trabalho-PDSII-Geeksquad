@@ -1,11 +1,10 @@
 #include "Validador.hpp"
-#include "Usuario.hpp" // 
 
 bool Validador::validarIdade(int idade) {
     return idade >= 18;
 }
 
-bool Validador::validarNomeResponsavel(const std::string& nome, const std::string& sobrenome, const std::unordered_map<std::string, Usuario>& usuarios) {
-    std::string chave = nome + "_" + sobrenome;
+bool Validador::validarNomeResponsavel(const string& nome, const string& sobrenome, const unordered_map<string, Usuario>& usuarios) {
+    string chave = nome + "_" + sobrenome;
     return usuarios.find(chave) != usuarios.end();
 }
