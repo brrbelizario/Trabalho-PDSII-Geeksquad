@@ -4,7 +4,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include "Historico.hpp" 
+#include "Historico.hpp"
 #include "Logger.hpp"    
 
 class ComprarCriptoMoeda {
