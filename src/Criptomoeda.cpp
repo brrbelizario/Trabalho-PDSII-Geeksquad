@@ -1,4 +1,4 @@
-#include "Criptomoeda.hpp"
+#include "./include/Criptomoeda.hpp"
 
 Criptomoeda::Criptomoeda(string nome, double cotacao) : nome(nome), cotacao(cotacao) {}
 
