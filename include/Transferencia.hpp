@@ -4,9 +4,10 @@
 #include "Carteira.hpp"
 using namespace std;
 
-class Transferencia {
+class Transferencia
+{
 public:
-    static bool realizarTransferencia(Carteira& deCarteira, Carteira& paraCarteira, double valor);
+    static bool realizarTransferencia(Carteira &deCarteira, Carteira &paraCarteira, double valor);
 };
 
 #endif // TRANSFERENCIA_HPP

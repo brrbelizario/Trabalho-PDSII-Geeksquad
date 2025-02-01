@@ -5,9 +5,10 @@
 #include <iostream>
 using namespace std;
 
-class Relatorio {
+class Relatorio
+{
 public:
-    static void gerarRelatorio(const Historico& historico);
+    static void gerarRelatorio(const Historico &historico);
 };
 
 #endif // RELATORIO_HPP

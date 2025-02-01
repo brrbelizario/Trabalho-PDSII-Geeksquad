@@ -6,13 +6,14 @@
 #include <sstream>
 using namespace std;
 
-class Transacao {
+class Transacao
+{
 private:
     double valor;
     string tipo;
 
 public:
-    Transacao(double valor, const string& tipo);
+    Transacao(double valor, const string &tipo);
 
     void exibirDetalhes() const;
     string formatarParaLog() const;

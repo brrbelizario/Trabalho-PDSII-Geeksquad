@@ -1,5 +1,6 @@
-#include "Deposito.hpp"
+#include "../include/Deposito.hpp"
 
-void Deposito::realizarDeposito(Carteira& carteira, double valor) {
+void Deposito::realizarDeposito(Carteira &carteira, double valor)
+{
     carteira.adicionarSaldo(valor);
 }

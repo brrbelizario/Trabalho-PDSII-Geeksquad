@@ -6,9 +6,10 @@
 #include <iomanip>
 using namespace std;
 
-class Saldo {
+class Saldo
+{
 public:
-    static void exibirSaldo(const Carteira& carteira);
+    static void exibirSaldo(const Carteira &carteira);
 };
 
 #endif // SALDO_HPP

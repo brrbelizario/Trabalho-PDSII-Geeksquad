@@ -6,10 +6,11 @@
 #include "Usuario.hpp"
 using namespace std;
 
-class Validador {
+class Validador
+{
 public:
     static bool validarIdade(int idade);
-    static bool validarNomeResponsavel(const string& nome, const string& sobrenome, const unordered_map<string, Usuario>& usuarios);
+    static bool validarNomeResponsavel(const string &nome, const string &sobrenome, const unordered_map<string, Usuario> &usuarios);
 };
 
 #endif // VALIDADOR_HPP

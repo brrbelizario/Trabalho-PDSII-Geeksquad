@@ -5,9 +5,10 @@
 #include <iostream>
 using namespace std;
 
-class Notificacao {
+class Notificacao
+{
 public:
-    static void enviarNotificacao(const string& mensagem);
+    static void enviarNotificacao(const string &mensagem);
 };
 
 #endif // NOTIFICACAO_HPP

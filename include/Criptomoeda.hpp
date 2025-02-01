@@ -4,7 +4,8 @@
 #include <string>
 using namespace std;
 
-class Criptomoeda {
+class Criptomoeda
+{
 private:
     string nome;
     double cotacao;

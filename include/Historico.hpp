@@ -6,16 +6,17 @@
 #include <fstream>
 using namespace std;
 
-class Historico {
+class Historico
+{
 private:
     vector<Transacao> transacoes;
 
 public:
-    void adicionarTransacao(const Transacao& transacao);
+    void adicionarTransacao(const Transacao &transacao);
     void exibirHistorico() const;
-    void salvarLog(const string& nomeUsuario) const;
+    void salvarLog(const string &nomeUsuario) const;
     vector<Transacao> getTransacoes() const;
-    static void salvarLogAdministrador(const string& logGeral);
+    static void salvarLogAdministrador(const string &logGeral);
 };
 
 #endif // HISTORICO_HPP

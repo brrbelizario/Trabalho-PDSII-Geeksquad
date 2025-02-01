@@ -5,9 +5,10 @@
 #include <iostream>
 using namespace std;
 
-class Logger {
+class Logger
+{
 public:
-    static void log(const string& mensagem);
+    static void log(const string &mensagem);
 };
 
 #endif // LOGGER_HPP

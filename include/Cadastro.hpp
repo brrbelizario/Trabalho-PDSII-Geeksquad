@@ -4,9 +4,10 @@
 #include "Usuario.hpp"
 using namespace std;
 
-class Cadastro {
+class Cadastro
+{
 public:
-    static Usuario criarConta(const string& nome, const string& sobrenome, const string& senha, int idade, bool administrador = false);
+    static Usuario criarConta(const string &nome, const string &sobrenome, const string &senha, int idade, bool administrador = false);
 };
 
 #endif // CADASTRO_HPP

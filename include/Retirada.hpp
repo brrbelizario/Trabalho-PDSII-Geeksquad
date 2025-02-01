@@ -4,9 +4,10 @@
 #include "Carteira.hpp"
 using namespace std;
 
-class Retirada {
+class Retirada
+{
 public:
-    static bool realizarRetirada(Carteira& carteira, double valor);
+    static bool realizarRetirada(Carteira &carteira, double valor);
 };
 
 #endif // RETIRADA_HPP

@@ -4,9 +4,10 @@
 #include "Carteira.hpp"
 using namespace std;
 
-class Deposito {
+class Deposito
+{
 public:
-    static void realizarDeposito(Carteira& carteira, double valor);
+    static void realizarDeposito(Carteira &carteira, double valor);
 };
 
 #endif // DEPOSITO_HPP

@@ -1,34 +1,36 @@
-#include <iostream>      
-#include <fstream>       
-#include <string>       
-#include <vector>        
-#include <unordered_map> 
-#include <iomanip>       
-#include <sstream>       
-#include <cctype> 
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <iomanip>
+#include <sstream>
+#include <cctype>
 #include <ctime>
-#include <algorithm>      
+#include <algorithm>
 
-#include "../include/Usuario.hpp"
-#include "../include/Carteira.hpp"
-#include "../include/Transacao.hpp"
-#include "../include/Criptomoeda.hpp"
-#include "../include/Historico.hpp"
-#include "../include/Logger.hpp"
-#include "../include/Cadastro.hpp"
-#include "../include/Login.hpp"
-#include "../include/Transferencia.hpp"
-#include "../include/Saldo.hpp"
-#include "../include/Deposito.hpp"
-#include "../include/Retirada.hpp"
-#include "../include/Notificacao.hpp"
-#include "../include/Validador.hpp"
-#include "../include/Relatorio.hpp"
-#include "../include/Sistema.hpp"
+#include "Usuario.cpp"
+#include "Carteira.cpp"
+#include "Transacao.cpp"
+#include "Criptomoeda.cpp"
+#include "Historico.cpp"
+#include "Logger.cpp"
+#include "Cadastro.cpp"
+#include "Login.cpp"
+#include "Transferencia.cpp"
+#include "Saldo.cpp"
+#include "Deposito.cpp"
+#include "Retirada.cpp"
+#include "Notificacao.cpp"
+#include "Validador.cpp"
+#include "Relatorio.cpp"
+#include "Sistema.cpp"
+#include "ComprarCripto.cpp"
 
 using namespace std;
 
-int main() {
+int main()
+{
     Sistema sistema;
 
     sistema.carregarUsuarios();

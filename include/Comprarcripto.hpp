@@ -1,22 +1,29 @@
-/*#ifndef COMPRARCRIPTO_HPP
-#define COMPRARCRIPTO_HPP
+#ifndef COMPRAR_CRIPTO_HPP
+#define COMPRAR_CRIPTO_HPP
 
 #include <iostream>
 #include <iomanip>
-#include "Carteira.cpp"
+#include <string>
+#include "Historico.hpp"
+#include "Logger.hpp"
+#include "Carteira.hpp"
 
-class ComprarCriptoMoeda {
+class ComprarCripto
+{
 private:
     const double valorBitcoin = 620897.68; // 1 Bitcoin em reais
-    const double valorDogCoin = 200.00;    // 1 Dogecoin em reais
-    double saldo;  // Saldo do usuário
-    Carteira* carteira;
+    const double valorDogeCoin = 200.00;   // 1 Dogecoin em reais
+    double saldoTotal;                     // Saldo total disponível
+    double saldoBitcoin;                   // Saldo em Bitcoin
+    double saldoDogcoin;                   // Saldo em Dogcoin
+    Historico historico;                   // Histórico de transações
+    Carteira &carteira;                    // Non-const reference
 
 public:
-    ComprarCriptoMoeda(double saldoInicial) : saldo(saldoInicial) {}
+    ComprarCripto(double atualB, double atualD, Carteira &carteira) : carteira(carteira) {}
 
     void menu();
     void calcularPorcentagem(int opcao, double valorCompra);
 };
 
-#endif // COMPRARCRIPTO_HPP */
+#endif // COMPRARCRIPTO_HPP

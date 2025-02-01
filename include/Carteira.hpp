@@ -4,9 +4,12 @@
 #include <iostream>
 using namespace std;
 
-class Carteira {
+class Carteira
+{
 private:
     double saldo;
+    double doge;
+    double btc;
 
 public:
     Carteira();
@@ -14,7 +17,12 @@ public:
     double getSaldo() const;
     void adicionarSaldo(double valor);
     bool retirarSaldo(double valor);
+
+    double getSaldoD() const;
+    void adicionarSaldoD(double valor);
+
+    double getSaldoB() const;
+    void adicionarSaldoB(double valor);
 };
 
 #endif // CARTEIRA_HPP
-

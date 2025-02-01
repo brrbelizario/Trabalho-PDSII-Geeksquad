@@ -4,9 +4,10 @@
 #include "Usuario.hpp"
 using namespace std;
 
-class Login {
+class Login
+{
 public:
-    static bool validarCredenciais(const Usuario& usuario, const string& senha);
+    static bool validarCredenciais(const Usuario &usuario, const string &senha);
 };
 
 #endif // LOGIN_HPP
