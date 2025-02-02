@@ -271,6 +271,14 @@ void Sistema::fazerLogin()
             Logger::log("\nMenu:\n1. Depositar\n2. Retirar\n3. Exibir Saldo\n4. Exibir Historico\n5. Comprar CriptoMoeda\n6. Logout\nEscolha: ");
             cin >> opcaoUsuario;
 
+            if (cin.fail())
+            {
+                Logger::log("Entrada inválida. Digite um número entre 1 e 6.");
+                cin.clear();
+                cin.ignore(1000, '\n');
+                continue;
+            }
+
             if (opcaoUsuario == 1)
             {
                 double valor;
