@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include "Usuario.hpp"
 using namespace std;
+#pragma once
 
 class Validador
 {

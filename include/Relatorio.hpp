@@ -4,6 +4,7 @@
 #include "Historico.hpp"
 #include <iostream>
 using namespace std;
+#pragma once
 
 class Relatorio
 {

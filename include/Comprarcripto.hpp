@@ -7,6 +7,7 @@
 #include "Historico.hpp"
 #include "Logger.hpp"
 #include "Carteira.hpp"
+#pragma once
 
 class ComprarCripto
 {

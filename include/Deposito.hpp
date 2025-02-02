@@ -3,6 +3,7 @@
 
 #include "Carteira.hpp"
 using namespace std;
+#pragma once
 
 class Deposito
 {

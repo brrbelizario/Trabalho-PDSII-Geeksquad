@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 using namespace std;
+#pragma once
 
 class Historico
 {

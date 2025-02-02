@@ -3,6 +3,7 @@
 
 #include <string>
 #include "Carteira.hpp" // Incluindo a carteira
+#pragma once
 
 using namespace std;
 

@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <sstream>
 using namespace std;
+#pragma once
 
 class Transacao
 {

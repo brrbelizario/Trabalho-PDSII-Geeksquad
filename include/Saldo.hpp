@@ -5,6 +5,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+#pragma once
 
 class Saldo
 {
