@@ -21,8 +21,10 @@ void Carteira::adicionarSaldo(double valor)
 
 bool Carteira::retirarSaldo(double valor)
 {
-    if (valor > saldo)
+    if (valor > saldo){
+       cout << "saldo insuficiente" << endl;
         return false;
+    }
     if (valor < 0)
     {
         cout << "valor invalido" << endl;
