@@ -48,14 +48,14 @@ Número de Classes: No mínimo 14 classes concretas
 git clone <URL_DO_REPOSITORIO>
 
 
-2. Compile o código:
+2. Compile o código (dentro do diretório do trabalho):
 
-g++ -o carteira main.cpp
+make
 
 
 3. Execute o programa:
 
-./carteira
+./program.exe
 
 
 
